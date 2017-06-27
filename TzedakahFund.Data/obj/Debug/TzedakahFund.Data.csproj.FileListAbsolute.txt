@@ -1,0 +1,6 @@
+C:\Users\Malka\documents\visual studio 2015\Projects\TzedakahFund\TzedakahFund.Data\bin\Debug\TzedakahFund.Data.dll.config
+C:\Users\Malka\documents\visual studio 2015\Projects\TzedakahFund\TzedakahFund.Data\bin\Debug\TzedakahFund.Data.dll
+C:\Users\Malka\documents\visual studio 2015\Projects\TzedakahFund\TzedakahFund.Data\bin\Debug\TzedakahFund.Data.pdb
+C:\Users\Malka\documents\visual studio 2015\Projects\TzedakahFund\TzedakahFund.Data\obj\Debug\TzedakahFund.Data.csprojResolveAssemblyReference.cache
+C:\Users\Malka\documents\visual studio 2015\Projects\TzedakahFund\TzedakahFund.Data\obj\Debug\TzedakahFund.Data.dll
+C:\Users\Malka\documents\visual studio 2015\Projects\TzedakahFund\TzedakahFund.Data\obj\Debug\TzedakahFund.Data.pdb

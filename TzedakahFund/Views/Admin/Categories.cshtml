@@ -1,0 +1,51 @@
+﻿@using TzedakahFund.Models
+@using TzedakahFund.Data
+@model CategoriesViewModel
+
+@{
+    ViewBag.Title = "Categories";
+}
+
+<div class="row">
+    <div class="col-md-3">
+        <button class="btn btn-primary" id="add">Add Category</button>
+    </div> 
+</div>
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <table class="table table-hover table-bordered table-striped">
+            <tr>
+                <th>Name</th>
+                <th>Actions</th>
+            </tr>
+           
+        </table>
+    </div>
+</div>
+
+<div class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    <input type="hidden" name="id" />
+                    <input type="text" name="name" id="name" placeholder="Category Name" class="form-control" />
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="add-button">Save</button>
+                <button type="button" class="btn btn-primary" id="edit-button">Save</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+@section scripts
+{
+    <script src="/Scripts/categories.js"></script>
+}

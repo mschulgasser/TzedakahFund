@@ -1,0 +1,36 @@
+﻿@using TzedakahFund.Models
+@using TzedakahFund.Data
+@model ApplicationViewModel
+
+@{
+    ViewBag.Title = "Apply";
+}
+
+
+<div class="row">
+    <div class="col-md-6 col-md-offset-3 well">
+        <form method="post" action="/home/apply">
+            <h2>Application</h2>
+            <br/>
+            <select id="category" name="categoryId" class="form-control">
+                <option value="0">*** SELECT A CATEGORY***</option>
+                @foreach (Category c in Model.Categories)
+                {
+                    <option value="@c.Id">@c.Name</option>
+                }
+            </select> 
+            <br />
+            <input id="amount" type="text" name="amount" class="form-control" placeholder="Amount" />
+            <br />
+            <textarea name="description" class="form-control" placeholder="Description"></textarea> 
+            <br />
+            <input type="hidden" name="userId" value="@Model.User.Id" />
+            <button class="btn btn-success" id="submit" disabled>Submit</button>
+        </form>
+    </div>
+</div>
+
+@section scripts
+{
+    <script src="/Scripts/Application.js"></script>
+}

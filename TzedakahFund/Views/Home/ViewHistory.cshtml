@@ -1,0 +1,41 @@
+﻿@using TzedakahFund.Models
+@using TzedakahFund.Data
+@model ViewHistoryViewModel
+
+@{
+    ViewBag.Title = "ViewHistory";
+}
+
+<h2>View History of @Model.User.FirstName @Model.User.LastName</h2>
+
+<table class="table table-hover table-bordered table-striped">
+    <tr>
+        <th>Date</th>
+        <th>Amount</th>
+        <th>Category</th>
+        <th>Status</th>
+    </tr>
+    @foreach (Application a in Model.User.Applications)
+    {
+        <tr>
+            <td>@a.Date.ToShortDateString()</td>
+            <td>@a.Amount.ToString("C")</td>
+            <td>@a.Category.Name</td>
+            <td>
+                @if (a.Status == true)
+                {
+                    <h5>Approved</h5>
+                }
+                else if (a.Status == false)
+                {
+                    <h5>Rejected</h5>
+                }
+                else
+                {
+                    <h5>Pending</h5>
+                }
+            </td>
+        </tr>
+    }
+</table>
+

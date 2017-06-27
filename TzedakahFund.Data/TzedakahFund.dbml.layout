@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="TzedakahFund">
+  <DataContextMoniker Name="/TzedakahFundDataContext" />
+  <nestedChildShapes>
+    <classShape Id="7330f16e-5c07-4883-81a3-0850b3f63350" absoluteBounds="0.75, 3.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/TzedakahFundDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dee48b50-9932-42a4-a631-2505c3e6db37" absoluteBounds="0.765, 4.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4499ae8e-b2dd-4e0c-8d3e-b7580ed70f8f" absoluteBounds="0.75, 1.25, 2, 1.1939925130208338">
+      <DataClassMoniker Name="/TzedakahFundDataContext/Category" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e0b3ac4e-600a-4ecc-919d-4246b479c7cb" absoluteBounds="0.765, 1.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9bdcfc7d-c619-49c7-ad5f-391587d7cf91" absoluteBounds="5, 1.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/TzedakahFundDataContext/Application" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b33f412a-7c09-4943-bb2f-25a02fb1bee6" absoluteBounds="5.015, 2.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 2.09699625651042); (5 : 2.09699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TzedakahFundDataContext/Category/Category_Application" />
+      <nodes>
+        <classShapeMoniker Id="4499ae8e-b2dd-4e0c-8d3e-b7580ed70f8f" />
+        <classShapeMoniker Id="9bdcfc7d-c619-49c7-ad5f-391587d7cf91" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.96800017447917); (6 : 4.96800017447917); (6 : 3.90549967447917)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TzedakahFundDataContext/User/User_Application" />
+      <nodes>
+        <classShapeMoniker Id="7330f16e-5c07-4883-81a3-0850b3f63350" />
+        <classShapeMoniker Id="9bdcfc7d-c619-49c7-ad5f-391587d7cf91" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

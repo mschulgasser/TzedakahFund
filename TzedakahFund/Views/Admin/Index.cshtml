@@ -1,0 +1,43 @@
+﻿@using TzedakahFund.Models
+@using TzedakahFund.Data
+@model  AdminIndexViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="row">
+    <div class="col-md-3">
+        <a href="/Admin/Categories" class="btn btn-success">Manage Categories</a>
+    </div>
+    <div class="col-md-3 col-md-offset-6">
+        <a href="/home/logout" class="btn btn-warning">Log out</a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4 col-md-offset-4">
+        <select class="form-control" id="category-select">
+            <option value="all">*** ALL CATEGORIES ***</option>
+            @foreach (Category c in Model.Categories)
+            {
+                <option>@c.Name</option>
+            }
+        </select>
+    </div>
+</div>
+<table class="table table-hover table-bordered table-striped">
+    <tr>
+        <th>Name</th>
+        <th>Email Address</th>
+        <th>Category</th>
+        <th>Amount</th>
+        <th>Actions</th>
+    </tr>
+    
+</table>
+
+@section scripts 
+{
+    <script src="/Scripts/AdminIndex.js"></script>
+}
